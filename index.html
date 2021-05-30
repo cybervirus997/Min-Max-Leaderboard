@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *
+        {
+            padding: 0%;
+            margin: 0%;
+        }
+        input
+        {
+            padding: 3% 4%;
+            border:3px solid black;
+        }
+        #main
+        {
+            width: 40vw;
+            height: 70vh;
+            margin: 3vh auto;
+            background-color: rgb(197, 196, 196);
+            border: 1px solid black;
+            text-align: center;
+
+            display: flex;
+            flex-flow: column nowrap;
+        }
+
+        #dis
+        {
+            width: 70%;
+            margin: 1% auto;
+
+            display: flex;
+            flex-flow: row nowrap;
+
+            
+        }
+
+        #small,#big
+        {
+            width: 30%;
+            padding: 3%;
+            font-size: x-large;
+            margin-left: 10%;
+            border: 1px solid black;
+            justify-content: space-between;
+            background-color: rgb(170, 192, 233);
+        }
+
+        #bar
+        {
+            margin: 1% auto;
+            
+        }
+
+        .box
+        {
+            padding: 4%;
+            background-color: tomato;
+            color: white;
+            font-size: x-large;
+            font-weight: bolder;
+            border: 1px solid rgb(231, 231, 231);
+        }
+        .box:hover
+        {
+            padding: 4.5%;
+            background-color: rgb(190, 147, 139);
+            color: white;
+            font-size: x-large;
+            font-weight: bolder;
+            border: 1px solid rgb(0, 0, 0);
+        }
+
+        #sub
+        {
+            padding: 1% 4%;
+            background-color: rgb(134, 189, 80);
+            border: 1px solid black;
+            color: white;
+            font-size: x-large;
+            font-weight: bolder;
+        }
+        #sub:hover
+        {
+            padding: 1.5% 4.5%;
+            background-color: rgb(79, 141, 17);
+            border: 1px dashed rgb(106, 45, 185);
+            color: white;
+            font-size: x-large;
+            font-weight: bolder;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div id="main">
+
+        <div id="dis">
+
+            <div id="small">Small value</div>
+
+            <div id="big">Big value</div>
+
+        </div>
+
+        <div id="bar">
+
+            <input type="text" id="bar-text">
+
+        </div>
+
+        <div id="num">
+
+            <div>
+                <button class="box" onclick="test1()">1</button>
+                <button  class="box" onclick="test2()">2</button>
+                <button  class="box" onclick="test3()">3</button>
+            </div>
+
+            <div>
+                <button class="box"  onclick="test4()">4</button>
+                <button  class="box" onclick="test5()">5</button>
+                <button  class="box" onclick="test6()">6</button>
+            </div>
+
+            <div>
+                <button  class="box" onclick="test7()">7</button>
+                <button  class="box" onclick="test8()">8</button>
+                <button   class="box" onclick="test9()">9</button>
+            </div>
+
+            <div>
+                <button   class="box" onclick="test0()">0</button>
+            </div>
+
+            <div>
+                <br>
+                <button id="sub" onclick="done()">submit</button>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <script>
+        
+        var y=0;
+        
+
+
+        var x="";
+
+    function test1()
+    {
+        x=x+"1";
+        console.log(x);
+
+        var t=document.getElementById("bar-text");
+        t.value=x;
+        t.style.border='3px solid black';
+    }
+    function test2()
+    {
+        x=x+"2";
+        console.log(x);
+
+        var t=document.getElementById("bar-text");
+        t.value=x;
+        t.style.border='3px solid black';
+    }
+    function test3()
+    {
+        x=x+"3";
+        console.log(x);
+
+        var t=document.getElementById("bar-text");
+        t.value=x;
+        t.style.border='3px solid black';
+    }
+    function test4()
+    {
+        x=x+"4";
+        console.log(x);
+
+        var t=document.getElementById("bar-text");
+        t.value=x;
+        t.style.border='3px solid black';
+    }
+    function test5()
+    {
+        x=x+"5";
+        console.log(x);
+
+        var t=document.getElementById("bar-text");
+        t.value=x;
+        t.style.border='3px solid black';
+    }
+    function test6()
+    {
+        x=x+"6";
+        console.log(x);
+
+        var t=document.getElementById("bar-text");
+        t.value=x;
+        t.style.border='3px solid black';
+    }
+    function test7()
+    {
+        x=x+"7";
+        console.log(x);
+
+        var t=document.getElementById("bar-text");
+        t.value=x;
+        t.style.border='3px solid black';
+    }
+    function test8()
+    {
+        x=x+"8";
+        console.log(x);
+
+        var t=document.getElementById("bar-text");
+        t.value=x;
+        t.style.border='3px solid black';
+    }
+    function test9()
+    {
+        x=x+"9";
+        console.log(x);
+
+        var t=document.getElementById("bar-text");
+        t.value=x;
+        t.style.border='3px solid black';
+    }
+    function test0()
+    {
+        x=x+"0";
+        console.log(x);
+
+        var t=document.getElementById("bar-text");
+        t.value=x;
+        t.style.border='3px solid black';
+    }
+    function done()
+    {
+        
+        x=Number(x);
+        
+        
+        
+        if(x<y)
+        {
+            y=x;
+            var q=document.getElementById("small");
+            q.innerHTML=x;
+        }
+        else if(x>y)
+        {
+            y=x;
+            var q=document.getElementById("big");
+            q.innerHTML=x;
+        }
+        
+        x="";
+
+        var t=document.getElementById("bar-text");
+        t.value=0;
+
+        t.style.border='2px dashed red';
+    }
+        
+
+    </script>
+
+</body>
+</html>
